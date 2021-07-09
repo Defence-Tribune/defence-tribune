@@ -1,25 +1,67 @@
 ---
 permalink: /404.html
-layout: default
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
 
-<div class="container">
-  <h1>404</h1>
+<!DOCTYPE html>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404: Page Not Found - The Defence Tribune</title>
+  </head>
+
+
+  <style type="text/css" media="screen">
+      * {
+        margin:  0;
+        padding: 0;
+      }
+
+      .Container404 {
+        width:  100vw;
+        height: 100vh;
+
+        background-color: #171717;
+      }
+
+      .Content404 {
+        padding: 8vh 0vw 4vw 0vw;  /* skip navbar */
+
+        background-color: #171717;
+
+        color: #e6e6e6;
+        text-align: center;
+
+        margin:  0 16vw 0 16vw;;
+        min-height: 80vh;
+
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+  </style>
+
+
+  <body>
+
+    {% include navbar.html %}
+
+
+    <div class='Container404'>
+
+      <div class='Content404'>
+
+        <h1 style='font-size: 8em;'>404</h1>
+        <h1 style='font-size: 2em;'>The page you requested does not exist.</h1>
+
+      </div>
+
+    </div>
+
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
