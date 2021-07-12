@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 
+
 <html lang="en">
+
 
     {% include head.html %}
 
+
     <style>
         * {
-            margin:  0;
+            margin: 0;
             padding: 0;
         }
 
-        .Container {
-            min-height: 100vh;
+        .PostContainer {
+            min-height: 94vh;
 
             background-color: #171717;
         }
@@ -19,14 +22,52 @@
         .Post {
             padding: 8vh 0vw 4vw 0vw;  /* skip navbar */
             margin:  0 16vw 0 16vw;
-            min-height: 80vh;
 
             background-color: #171717;
+
             color: #e6e6e6;
-            font-size: 14pt;
+            font-size: 16pt;
+            line-height: 1.5;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             text-align: justify;
             text-justify: inter-word;
+            word-wrap: normal;
+        }
+
+        .Post h1 {
+            color: #e6e6e6;
+            font-size: 34pt;
+            text-align: center;
+        }
+
+        .Post h2 {
+            color: #e6e6e6;
+            font-size: 30pt;
+            text-align: center;
+        }
+
+        .Post h3 {
+            color: #e6e6e6;
+            font-size: 26pt;
+            text-align: center;
+        }
+
+        .Post h4 {
+            color: #e6e6e6;
+            font-size: 22pt;
+            text-align: center;
+        }
+
+        .Post h5 {
+            color: #e6e6e6;
+            font-size: 18pt;
+            text-align: left;
+        }
+
+        .Post h6 {
+            color: #e6e6e6;
+            font-size: 16pt;
+            text-align: left;
         }
 
         .Post a {
@@ -35,18 +76,93 @@
         }
 
         .Post img {
-            width: 640px;
-            height: 480px;
-            /* TODO: fix img config*/
+            display: block;
+
+            margin: 32px auto 32px auto;
+
+            max-width:28vw;
+            
+        }
+
+
+        @media screen and (max-width: 700px) {
+            .Post {
+                padding: 8vh 0vw 4vw 0vw;  /* skip navbar */
+                margin:  0 4vw 0 4vw;
+
+                background-color: #171717;
+
+                color: #e6e6e6;
+                font-size: 14pt;
+                line-height: 1.35;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-align: left;
+                word-wrap: normal;
+            }
+
+            .Post h1 {
+                margin-bottom: 22px;
+
+                color: #e6e6e6;
+                font-size: 22pt;
+                text-align: center;
+            }
+
+            .Post h2 {
+                margin-bottom: 8px;
+                color: #e6e6e6;
+                font-size: 20pt;
+                text-align: center;
+            }
+
+            .Post h3 {
+                color: #e6e6e6;
+                font-size: 19pt;
+                text-align: center;
+            }
+
+            .Post h4 {
+                color: #e6e6e6;
+                font-size: 18pt;
+                text-align: center;
+            }
+
+            .Post h5 {
+                color: #e6e6e6;
+                font-size: 17pt;
+                text-align: left;
+            }
+
+            .Post h6 {
+                color: #e6e6e6;
+                font-size: 16pt;
+                text-align: left;
+            }
+
+            .Post a {
+                color: #c1d3fe;
+                text-decoration: none;
+            }
+
+            .Post img {
+                display: block;
+
+                margin: 28px auto 28px auto;
+
+                max-width:64vw;
+                
+            }
         }
     </style>
 
+
     <body>
 
-        {% include navbar.html %}
+
+        {% include navbar.html %}        
 
 
-        <div class='Container'>
+        <div class='PostContainer'>
 
             <div class='Post'>
 
@@ -56,8 +172,11 @@
 
         </div>
 
+
         {% include footer.html %}
         
+
     </body>
+
 
 </html>

@@ -19,3 +19,4 @@ plugins:
 exclude:
    - test
    - init
+   - README.md
