@@ -23,4 +23,4 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
-![](https://i.pinimg.com/originals/2c/a9/0a/2ca90adb46388629f97b77f6cd6cccc1.jpg)
+![](http://static.simpledesktops.com/uploads/desktops/2020/08/04/CMYK__RGB.png)
