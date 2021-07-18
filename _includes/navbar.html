@@ -2,16 +2,14 @@
 
     <div class='NavBarContent'>
 
-        <div class='Logo'>
+        <div class='NavLogo'>
             <a href='/'> <img width="24" height="24" quality={100} src="{{ site.asset }}/logo.png" alt='Home' /> </a>
         </div>
 
-        <div class='Links'>
-            <div class='NavLinkEntry'> <a class='NavLink' href='/defence'> Defence </a> </div>
-            <div class='NavLinkEntry'> <a class='NavLink' href='/politics'> Politics </a> </div>
-            <div class='NavLinkEntry'> <a class='NavLink' href='/historical'> Historical </a> </div>
-            <div class='NavLinkEntry'> <a class='NavLink' href='/archive'> Archive </a> </div>
-        </div>
+        <div class='NavLinks'> <a class='NavLinkEntry' href='/defence'> Defence </a> </div>
+        <div class='NavLinks'> <a class='NavLinkEntry' href='/politics'> Politics </a> </div>
+        <div class='NavLinks'> <a class='NavLinkEntry' href='/historical'> Historical </a> </div>
+        <div class='NavLinks'> <a class='NavLinkEntry' href='/archive'> Archive </a> </div>
 
     </div>
 
@@ -24,7 +22,7 @@
     }
 
     .NavBar {
-        height: 32px;
+        height: 42px;
         width: 100vw;
 
         position: fixed;
@@ -33,55 +31,60 @@
     }
 
     .NavBarContent {
+        height: inherit;
         margin-left: 16vw;
         margin-right: 16vw;
         
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        
+        align-items: center;
     }
 
-    .Links {
-        display: contents;
+    .NavLinks {
+        height: inherit;
+        display: flex;
+
+        margin: 0px 1vw 0px 0vw;
+
+        align-items: center;
+    }
+
+    .NavLinks:last-child {
+        margin-left: auto;
+        margin-right: 0;
     }
 
     .NavLinkEntry {
-        margin: 0px 1vw 0px 0vw;
-        padding-top: auto;
-        padding-bottom: auto;
+        height: 100%;
+        
         padding-left: 1vw;
         padding-right: 1vw;
+
+        display: flex;
+        align-items: center;
+
+        text-decoration: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 16pt;
+        color: #e6e6e6;
 
         transition: all ease-out 500ms;
     }
 
     .NavLinkEntry:hover {
+        color: #c1d3fe;
         background-color: #424242;
     }
 
-    .NavLink {
-        text-decoration: none;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 16pt;
-        color: white;
-
-        transition: all ease-out 250ms;
-        transition-delay: 20ms;
-    }
-
-
-    .Logo {
+    .NavLogo {
         margin: 0px 2vw 0px 0px;
-        padding: 2px;
 
         transition: all ease-out 250ms;
         transition-delay: 20ms;
 
         cursor: pointer;
-    }
-
-    .Logo:hover {
-        background-color: #424242;
     }
 
 
@@ -98,11 +101,11 @@
             flex-direction: row;
         }
 
-        .Links {
+        .NavLinks {
             display: none;
         }
 
-        .Logo {
+        .NavLogo{
             margin: 0;
 
             transition: all ease-out 250ms;
@@ -111,7 +114,7 @@
             margin-right: auto;
         }
 
-        .Logo:hover {
+        .NavLogo:hover {
             background-color: unset;
         }
     }
