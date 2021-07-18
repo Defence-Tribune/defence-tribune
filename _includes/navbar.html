@@ -2,9 +2,7 @@
 
     <div class='NavBarContent'>
 
-        <div class='NavLogo'>
-            <a href='/'> <img width="24" height="24" quality={100} src="{{ site.asset }}/logo.png" alt='Home' /> </a>
-        </div>
+        <div class='NavLogoWrapper'> <a class='NavLogo' href='/' > <img width="24" height="24" src="{{ site.asset }}/logo.png" alt='Home' /> </a> </div>
 
         <div class='NavLinkWrapper'> <a class='NavLinkEntry' href='/defence'> Defence </a> </div>
         <div class='NavLinkWrapper'> <a class='NavLinkEntry' href='/politics'> Politics </a> </div>
@@ -22,10 +20,12 @@
     }
 
     .NavBar {
-        height: 38px;
+        height: 42px;
         width: 100vw;
 
         position: fixed;
+
+        z-index: 1;
 
         background: #212121;
     }
@@ -77,17 +77,32 @@
         background-color: #424242;
     }
 
+    .NavLogoWrapper {
+        display: block;
+
+        height: inherit;
+
+        margin: 0px 1vw 0px 0vw;
+    }
+
     .NavLogo {
-        margin-right: 2vw;
+        height: inherit;
 
-        transition: all ease-out 250ms;
-        transition-delay: 20ms;
-
-        cursor: pointer;
+        display: flex;
+        align-items: center;
     }
 
 
     @media screen and (max-width: 700px) {
+        .NavBar {
+            height: 36px;
+            width: 100vw;
+
+            position: fixed;
+            
+            background: #212121;
+        }
+
         .NavBarContent {
             margin-left: 2vw;
             margin-right: 2vw;
@@ -104,13 +119,20 @@
             display: none;
         }
 
-        .NavLogo{
-            margin: 0;
+        .NavLogoWrapper {
+            display: block;
 
-            transition: all ease-out 250ms;
-            transition-delay: 20ms;
+            height: inherit;
 
+            margin-left: 0;
             margin-right: auto;
+        }
+
+        .NavLogo {
+            height: inherit;
+            align-items: center;
+            
+            display: flex;
         }
     }
 </style>
