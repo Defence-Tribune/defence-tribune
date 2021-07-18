@@ -6,10 +6,10 @@
             <a href='/'> <img width="24" height="24" quality={100} src="{{ site.asset }}/logo.png" alt='Home' /> </a>
         </div>
 
-        <div class='NavLinks'> <a class='NavLinkEntry' href='/defence'> Defence </a> </div>
-        <div class='NavLinks'> <a class='NavLinkEntry' href='/politics'> Politics </a> </div>
-        <div class='NavLinks'> <a class='NavLinkEntry' href='/historical'> Historical </a> </div>
-        <div class='NavLinks'> <a class='NavLinkEntry' href='/archive'> Archive </a> </div>
+        <div class='NavLinkWrapper'> <a class='NavLinkEntry' href='/defence'> Defence </a> </div>
+        <div class='NavLinkWrapper'> <a class='NavLinkEntry' href='/politics'> Politics </a> </div>
+        <div class='NavLinkWrapper'> <a class='NavLinkEntry' href='/historical'> Historical </a> </div>
+        <div class='NavLinkWrapper'> <a class='NavLinkEntry' href='/archive'> Archive </a> </div>
 
     </div>
 
@@ -22,7 +22,7 @@
     }
 
     .NavBar {
-        height: 42px;
+        height: 38px;
         width: 100vw;
 
         position: fixed;
@@ -38,26 +38,25 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        
+
         align-items: center;
     }
 
-    .NavLinks {
+    .NavLinkWrapper {
+        display: block;
+
         height: inherit;
-        display: flex;
 
         margin: 0px 1vw 0px 0vw;
-
-        align-items: center;
     }
 
-    .NavLinks:last-child {
+    .NavLinkWrapper:last-child {
         margin-left: auto;
         margin-right: 0;
     }
 
     .NavLinkEntry {
-        height: 100%;
+        height: inherit;
         
         padding-left: 1vw;
         padding-right: 1vw;
@@ -79,7 +78,7 @@
     }
 
     .NavLogo {
-        margin: 0px 2vw 0px 0px;
+        margin-right: 2vw;
 
         transition: all ease-out 250ms;
         transition-delay: 20ms;
@@ -101,7 +100,7 @@
             flex-direction: row;
         }
 
-        .NavLinks {
+        .NavLinkWrapper {
             display: none;
         }
 
@@ -112,10 +111,6 @@
             transition-delay: 20ms;
 
             margin-right: auto;
-        }
-
-        .NavLogo:hover {
-            background-color: unset;
         }
     }
 </style>

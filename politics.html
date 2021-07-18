@@ -4,5 +4,11 @@ title: Politics - Defence Tribune
 ---
 
 <div>
-    
+    <ul>
+        {% for post in site.posts %}
+        {% if post.categories contains "politics" %}
+         <li>{{ post.title }}</li>
+        {% endif %}
+        {% endfor %}
+    </ul>
 </div>
