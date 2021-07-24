@@ -1,35 +1,8 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang='en'>
 
     {% include head.html %}
-
-    <style>
-        * {
-            margin:  0;
-            padding: 0;
-        }
-        .HomeFeedContainer {
-            min-height: calc(100vh - 48px);
-            width: 100%;
-
-            background-color: #171717;
-            color: wheat;
-        }
-        .HomeFeed {
-            padding: 8vh 0 4vw 0;  /* skip navbar */
-            margin: 0 16vw 0 16vw;
-
-            background-color: #171717;
-
-            color: #e6e6e6;
-            font-size: 16pt;
-            line-height: 1.5;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            text-align: left;
-            word-wrap: normal;
-        }
-    </style>
 
 
     <body>
@@ -48,5 +21,66 @@
         {% include footer.html %}
 
     </body>
+
+
+    <style>
+        * {
+            margin:  0;
+            padding: 0;
+        }
+
+        .HomeFeedContainer {
+            min-height: calc(100vh - 48px);
+            width: 100%;
+
+            background-color: #171717;
+            color: wheat;
+        }
+
+        .HomeFeed {
+            padding: 8vh 0 4vw 0;  /* skip navbar */
+            margin: 0 16vw 0 16vw;
+
+            background-color: #171717;
+
+            color: #e6e6e6;
+            font-size: 16pt;
+            line-height: 1.5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: left;
+            word-wrap: normal;
+        }
+
+        .HomeFeed h1 {
+            color: #e6e6e6;
+            font-size: 34pt;
+            text-align: center;
+        }
+
+
+        @media screen and (max-width: 700px) {
+            .HomeFeed {
+                padding: 8vh 0vw 4vw 0vw;  /* skip navbar */
+                margin: 0 4vw 0 4vw;
+
+                background-color: #171717;
+
+                color: #e6e6e6;
+                font-size: 14pt;
+                line-height: 1.45;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-align: left;
+                word-wrap: normal;
+            }
+
+            .HomeFeed h1 {
+                margin-bottom: 22px;
+
+                color: #e6e6e6;
+                font-size: 22pt;
+                text-align: center;
+            }
+        }
+    </style>
 
 </html>

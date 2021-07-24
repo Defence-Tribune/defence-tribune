@@ -2,7 +2,7 @@
 
     <div class='NavBarContent'>
 
-        <div class='NavLogoWrapper'> <a class='NavLogo' href='/' > <img width="24" height="24" src="{{ site.asset }}/logo.png" alt='Home' /> </a> </div>
+        <div class='NavLogoWrapper'> <a class='NavLogo' href='/' > <img width='24' height='24' src='{{ site.asset }}/logo.png' alt='Home' /> </a> </div>
 
         <div class='NavLinkWrapper'> <a class='NavLinkEntry' href='/defence'> Defence </a> </div>
         <div class='NavLinkWrapper'> <a class='NavLinkEntry' href='/politics'> Politics </a> </div>
@@ -13,21 +13,27 @@
 
 </div>
 
-<style type="text/css" media="screen">
+<style type='text/css' media='screen'>
     * {
         margin:  0;
         padding: 0;
     }
 
     .NavBar {
-        height: 42px;
+        height: 36px;
         width: 100vw;
+
+        padding-top: 2px;
+        padding-bottom: 4px;
 
         position: fixed;
 
         z-index: 1;
 
         background: #212121;
+
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
     }
 
     .NavBarContent {
@@ -73,6 +79,7 @@
     }
 
     .NavLinkEntry:hover {
+        border-radius: 14px;
         color: #c1d3fe;
         background-color: #424242;
     }
@@ -95,12 +102,19 @@
 
     @media screen and (max-width: 700px) {
         .NavBar {
-            height: 36px;
+            height: 30px;
+
             width: 100vw;
+
+            padding-top: 2px;
+            padding-bottom: 4px;
 
             position: fixed;
             
             background: #212121;
+
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
         }
 
         .NavBarContent {

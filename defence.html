@@ -4,11 +4,20 @@ title: Defence - Defence Tribune
 ---
 
 <div>
-    <ul>
+
+    <h1> Defence </h1>
+
+    <ul class='FeedList'>
         {% for post in site.posts %}
         {% if post.categories contains "defence" %}
-         <li>{{ post.title }}</li>
+         <li>
+            <a href='{{ post.url }}' class='FeedCard'>
+                <div class='FeedListTitle'> {{ post.title }} </div>
+                <div class='FeedListDesc'> {{ post.description }} </div>
+            </a>
+        </li>
         {% endif %}
         {% endfor %}
     </ul>
+
 </div>
