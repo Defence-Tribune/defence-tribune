@@ -9,6 +9,11 @@
         <div class='NavLinkWrapper'> <a class='NavLinkEntry' href='/historical'> Historical </a> </div>
         <div class='NavLinkWrapper'> <a class='NavLinkEntry' href='/archive'> Archive </a> </div>
 
+        <div class='MenuContainer'>
+            <input type='checkbox' class='MenuToggler' />
+            <span class='CustomMenuIcon'></span>
+        </div>
+
     </div>
 
 </div>
@@ -56,7 +61,7 @@
         margin: 0px 1vw 0px 0vw;
     }
 
-    .NavLinkWrapper:last-child {
+    .NavLinkWrapper:nth-last-child(2) {
         margin-left: auto;
         margin-right: 0;
     }
@@ -99,6 +104,10 @@
         align-items: center;
     }
 
+    .MenuContainer {
+        display: none;
+    }
+
 
     @media screen and (max-width: 700px) {
         .NavBar {
@@ -129,24 +138,48 @@
             flex-direction: row;
         }
 
+        .MenuContainer {
+            display: block;
+
+            margin-left: auto;
+            margin-right: 0;
+
+            cursor: pointer;
+
+            height: 24px;
+            width: 24px;
+
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .MenuContainer input {
+            opacity: 0;
+            height: 0;
+            width: 0;
+        }
+
+        .CustomMenuIcon {
+            position: absolute;
+            height: inherit;
+            width: inherit;
+
+            background-color: #e6e6e6;
+        }
+
+        /*.MenuContainer input:checked ~ .CustomMenuIcon:after {
+            background-color:blue;
+        }*/
+
         .NavLinkWrapper {
             display: none;
         }
 
         .NavLogoWrapper {
-            display: block;
-
-            height: inherit;
-
             margin-left: 0;
             margin-right: auto;
-        }
-
-        .NavLogo {
-            height: inherit;
-            align-items: center;
-            
-            display: flex;
         }
     }
 </style>

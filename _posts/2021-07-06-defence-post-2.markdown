@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Article of Defence 2"
+title:  "Article of \"Defence\" 2"
 date:   2021-07-05 12:01:38 +0530
 categories: defence
-description: "description of defence 2"
+description: "placeholder description 2"
 ---
 # DEFENCE 2
 

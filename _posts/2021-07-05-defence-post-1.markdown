@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "Article of Defence 1"
+title:  "Article of \"Defence\" 1"
 date:   2021-07-05 12:01:37 +0530
 categories: defence
-description: "description of defence 1"
+description: "
+description of defence 1
+"
 ---
 # Defence 1
 

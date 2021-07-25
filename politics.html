@@ -4,11 +4,20 @@ title: Politics - Defence Tribune
 ---
 
 <div>
-    <ul>
+
+    <h1> Politics </h1>
+
+    <ul class='FeedList'>
         {% for post in site.posts %}
         {% if post.categories contains "politics" %}
-         <li>{{ post.title }}</li>
+         <li>
+            <a href='{{ post.url }}' class='FeedCard'>
+                <div class='FeedListTitle'> {{ post.title }} </div>
+                <div class='FeedListDesc'> {{ post.description }} </div>
+            </a>
+        </li>
         {% endif %}
         {% endfor %}
     </ul>
+
 </div>
