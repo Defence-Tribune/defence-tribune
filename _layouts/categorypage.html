@@ -30,23 +30,23 @@
         }
 
         body {
-            background-color: #171717;
+            background-color: #1d3557;
         }
 
         .FeedContainer {
             min-height: calc(100vh - 48px);
             width: 100%;
 
-            background-color: #171717;
+            background-color: #1d3557;
         }
 
         .Feed {
-            padding: 8vh 0 4vw 0;  /* skip navbar */
+            padding: 8vh 0 4vh 0;  /* skip navbar */
             margin: 0 16vw 0 16vw;
 
-            background-color: #171717;
+            background-color: #1d3557;
 
-            color: #e6e6e6;
+            color: white;
             font-size: 16pt;
             line-height: 1.5;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -55,8 +55,8 @@
         }
 
         .Feed h1 {
-            color: #e6e6e6;
-            font-size: 34pt;
+            color: white;
+            font-size: 38pt;
             text-align: center;
             padding-bottom: 32px;
         }
@@ -67,7 +67,7 @@
             padding: 16px;
             margin-bottom: 22px;
 
-            background-color: #202020;
+            background-color: rgba(32,32,32, 45%);
 
             border-radius: 8px;
 
@@ -76,12 +76,13 @@
         }
 
         .FeedList li:hover {
+            background-color: rgba(32,32,32, 85%);
             box-shadow: 0 0 12px 12px rgba(0,0,0,0.2);
             border-radius: 16px;
         }
 
         .FeedList li a {
-            color: #e6e6e6;
+            color: white;
             text-decoration: none;
         }
 
@@ -105,15 +106,21 @@
             word-wrap: break-word;
         }
 
+        .FeedListDate {
+            font-size: 12pt;
+
+            text-align: right;
+        }
+
 
         @media screen and (max-width: 700px) {
             .Feed {
-                padding: 8vh 0vw 4vw 0vw;  /* skip navbar */
+                padding: 8vh 0vw 4vh 0vw;  /* skip navbar */
                 margin: 0 4vw 0 4vw;
 
-                background-color: #171717;
+                background-color: #1d3557;
 
-                color: #e6e6e6;
+                color: white;
                 font-size: 14pt;
                 line-height: 1.45;
                 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -124,7 +131,7 @@
             .Feed h1 {
                 margin-bottom: 22px;
 
-                color: #e6e6e6;
+                color: white;
                 font-size: 22pt;
                 text-align: center;
             }
@@ -135,7 +142,7 @@
             }
 
             .Feed li a:hover {
-                color: #e6e6e6;
+                color: white;
             }
 
             .FeedListTitle {

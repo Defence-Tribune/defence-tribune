@@ -14,6 +14,7 @@ title: Defence - Defence Tribune
             <a href='{{ post.url }}' class='FeedCard'>
                 <div class='FeedListTitle'> {{ post.title }} </div>
                 <div class='FeedListSummary'> {{ post.summary }} </div>
+                <div class='FeedListDate'> {{post.date | truncate: 10, ''}} </div>
             </a>
         </li>
         {% endif %}
