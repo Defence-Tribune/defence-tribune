@@ -3,7 +3,7 @@ layout: post
 title:  "HISTORICAL - Welcome to Jekyll!"
 date:   2021-07-05 12:01:37 +0530
 categories: historical
-description: "desc of historical"
+summary: "summary of historical"
 permalink: /test
 ---
 
