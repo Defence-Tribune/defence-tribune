@@ -5,18 +5,19 @@ title: Historical - Defence Tribune
 
 <div>
 
-    <h1> Historical </h1>
+    <h1> Defence </h1>
 
     <ul class='FeedList'>
         {% for post in site.posts %}
-        {% if post.categories contains "historical" %}
-         <li>
-            <a href='{{ post.url }}' class='FeedCard'>
-                <div class='FeedListTitle'> {{ post.title }} </div>
-                <div class='FeedListDesc'> {{ post.description }} </div>
-            </a>
-        </li>
-        {% endif %}
+            {% if post.categories contains "historical" %}
+                <li>
+                    <a href='{{ post.url }}' class='FeedCard'>
+                        <div class='FeedListTitle'> {{ post.title }} </div>
+                        <div class='FeedListSummary'> {{ post.summary }} </div>
+                        <div class='FeedListDate'> {{post.date | truncate: 10, ''}} </div>
+                    </a>
+                </li>
+            {% endif %}
         {% endfor %}
     </ul>
 
