@@ -11,10 +11,12 @@ title: Archive - Defence Tribune
         {% for post in site.posts %}
             <li>
                 <a href='{{ post.url }}' class='FeedCard'>
-                    <div class='FeedListTitle'> {{ post.title }} </div>
-                    <div class='FeedListExcerpt'> {{ post.excerpt | truncate: 480 }} </div>
-                    <div class='FeedListDate'> {{post.date | truncate: 10, ''}} <br></div>
-                    <div class='FeedReadMoreMessage'> <i> Read more... </i> </div>
+                    <div class='FeedCardContents'>
+                        <div class='FeedListTitle'> {{ post.title }} </div>
+                        <div class='FeedListExcerpt'> {{ post.excerpt | truncate: 480 }} </div>
+                        <div class='FeedListDate'> {{post.date | truncate: 10, ''}} <br></div>
+                        <div class='FeedReadMoreMessage'> <i> Read more... </i> </div>
+                    </div>
                 </a>
             </li>
         {% endfor %}
