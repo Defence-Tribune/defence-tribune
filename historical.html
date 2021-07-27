@@ -5,7 +5,7 @@ title: Historical - Defence Tribune
 
 <div>
 
-    <h1> Defence </h1>
+    <h1> Historical </h1>
 
     <ul class='FeedList'>
         {% for post in site.posts %}
@@ -13,8 +13,9 @@ title: Historical - Defence Tribune
                 <li>
                     <a href='{{ post.url }}' class='FeedCard'>
                         <div class='FeedListTitle'> {{ post.title }} </div>
-                        <div class='FeedListSummary'> {{ post.summary }} </div>
-                        <div class='FeedListDate'> {{post.date | truncate: 10, ''}} </div>
+                        <div class='FeedListExcerpt'> {{ post.excerpt | truncate: 480 }} </div>
+                        <div class='FeedListDate'> {{post.date | truncate: 10, ''}} <br></div>
+                        <div class='FeedReadMoreMessage'> <i> Read more... </i> </div>
                     </a>
                 </li>
             {% endif %}

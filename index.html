@@ -23,9 +23,15 @@ title: Defence Tribune
                     {% for post in site.posts limit:1 %}
                         <a href='{{ post.url }}' class='HomeFeedLatestCard'>
                             <div class='HomeFeedLatestTitle'> {{ post.title }} </div>
-                            <div class='HomeFeedLatestSummary'> {{ post.summary }} </div>
+                            <div class='HomeFeedLatestExcerpt'> {{ post.excerpt | truncate: 480 }} </div>
+                            <div class='HomeFeedListDate'> {{post.date | truncate: 10, ''}} </div>
+                            <div class='HomeFeedReadMoreMessage'> <i> Read more... </i> </div>
                         </a>
                     {% endfor %}
+                </div>
+
+                <div class='HomeFeedOtherThreeContainer'>
+
                 </div>
                 
             </div>
@@ -44,9 +50,26 @@ title: Defence Tribune
         }
 
         body {
-            background-color: #1d3557;
+            background-image: linear-gradient(-45deg, #168aad, #1e6091, #184e77);
+            background-size: 400% 400%;
+
+            animation: gradient 10s ease infinite;
 
             /*overflow: hidden;*/
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .HomeFeedContainer {
@@ -57,8 +80,6 @@ title: Defence Tribune
         .HomeFeed {
             padding: 8vh 0 4vh 0;  /* skip navbar */
             margin: 0 16vw 0 16vw;
-
-            height: 84vh;
 
             color: #e6e6e6;
             font-size: 16pt;
@@ -78,7 +99,7 @@ title: Defence Tribune
         .HomeFeedLatest {
             list-style-type: none;
 
-            padding: 16px;
+            padding: 60px;
 
             background-color: #202020;
 
@@ -104,19 +125,35 @@ title: Defence Tribune
         }
 
         .HomeFeedLatestTitle {
-            font-size: 20pt;
+            font-size: 28pt;
             text-align: center;
 
-            word-wrap: break-word;
+            word-wrap: normal;
 
-            padding-bottom: 18px;
+            padding-bottom: 32px;
         }
 
-        .HomeFeedLatestSummary {
-            font-size: 14pt;
+        .HomeFeedLatestExcerpt {
+            color: #b3b6b7;
+            font-size: 11pt;
             text-align: center;
 
-            word-wrap: break-word;
+            word-wrap: normal;
+        }
+
+        .HomeFeedListDate {
+            font-size: 10pt;
+
+            text-align: right;
+
+            margin-top: 32px;
+            margin-bottom: 8px;
+        }
+
+        .HomeFeedReadMoreMessage {
+            font-size: 10pt;
+
+            text-align: right;
         }
 
 
@@ -139,8 +176,12 @@ title: Defence Tribune
                 margin-bottom: 22px;
 
                 color: #e6e6e6;
-                font-size: 22pt;
+                font-size: 24pt;
                 text-align: center;
+            }
+
+            .HomeFeedLatest {
+                padding: 28px;
             }
 
             .HomeFeedLatest:hover {
@@ -154,15 +195,30 @@ title: Defence Tribune
             }
 
             .HomeFeedLatestTitle {
-                font-size: 16pt;
+                font-size: 20pt;
                 text-align: center;
 
-                padding-bottom: 14px;
+                padding-bottom: 24px;
             }
 
-            .HomeFeedLatestSummary {
-                font-size: 12pt;
+            .HomeFeedLatestExcerpt {
+                font-size: 10pt;
                 text-align: center;
+            }
+
+            .HomeFeedListDate {
+                font-size: 10pt;
+
+                text-align: right;
+
+                margin-top: 32px;
+                margin-bottom: 4px;
+            }
+
+            .HomeFeedReadMoreMessage {
+                font-size: 10pt;
+
+                text-align: right;
             }
         }
     </style>

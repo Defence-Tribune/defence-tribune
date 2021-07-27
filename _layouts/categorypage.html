@@ -30,21 +30,17 @@
         }
 
         body {
-            background-color: #1d3557;
+            background-image: linear-gradient(#1d3557, #324766);
         }
 
         .FeedContainer {
             min-height: calc(100vh - 48px);
             width: 100%;
-
-            background-color: #1d3557;
         }
 
         .Feed {
             padding: 8vh 0 4vh 0;  /* skip navbar */
             margin: 0 16vw 0 16vw;
-
-            background-color: #1d3557;
 
             color: white;
             font-size: 16pt;
@@ -94,20 +90,30 @@
             font-size: 20pt;
             text-align: center;
 
-            word-wrap: break-word;
+            word-wrap: normal;
 
-            padding-bottom: 18px;
+            padding-bottom: 32px;
         }
 
-        .FeedListSummary {
-            font-size: 14pt;
+        .FeedListExcerpt {
+            color: #b3b6b7;
+            font-size: 11pt;
             text-align: center;
 
-            word-wrap: break-word;
+            word-wrap: normal;
         }
 
         .FeedListDate {
-            font-size: 12pt;
+            font-size: 9pt;
+
+            text-align: right;
+
+            margin-top: 18px;
+            margin-bottom: 8px;
+        }
+
+        .FeedReadMoreMessage {
+            font-size: 9pt;
 
             text-align: right;
         }
@@ -117,8 +123,6 @@
             .Feed {
                 padding: 8vh 0vw 4vh 0vw;  /* skip navbar */
                 margin: 0 4vw 0 4vw;
-
-                background-color: #1d3557;
 
                 color: white;
                 font-size: 14pt;
@@ -149,12 +153,18 @@
                 font-size: 16pt;
                 text-align: center;
 
-                padding-bottom: 14px;
+                
+                padding-bottom: 20px;
             }
 
-            .FeedListSummary {
-                font-size: 12pt;
+            .FeedListExcerpt {
+                font-size: 10pt;
                 text-align: center;
+            }
+
+            .FeedListDate {
+                margin-top: 12px;
+                margin-bottom: 2px;
             }
         }
     </style>
