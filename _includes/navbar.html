@@ -253,8 +253,10 @@
         }
 
         #MenuToggler:checked ~ #CustomMenuIcon .HamburgerBar1 {
-            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-            transform: translateY(50%) rotate(-45deg) translateX(-50%);
+            background-color: #d98880;
+
+            transform: rotate(45deg) translateY(10px);
+            left: 9px
         }
 
         #MenuToggler:checked ~ #CustomMenuIcon .HamburgerBar2 {
@@ -262,8 +264,10 @@
         }
 
         #MenuToggler:checked ~ #CustomMenuIcon .HamburgerBar3 {
-            -webkit-transform: rotate(45deg) translate(-8px, -8px);
-            transform: translateY(50%) rotate(45deg) translateX(50%);
+            background-color: #d98880;
+
+            transform: rotate(-45deg) translateY(-10px);
+            left: 9px
         }
 
         #MenuToggler:checked ~ #MenuOverlay {
@@ -283,11 +287,20 @@
         }
 
         .HamburgerBar1, .HamburgerBar2, .HamburgerBar3 {
+            position: relative;
+
+            z-index: 2;
+
             width: 20px;
             height: 4px;
-            background-color: white;
+
             margin:  3px 0;
+
+            background-color: white;
+
             transition: 250ms;
+
+            cursor: default;
         }
     }
 </style>
