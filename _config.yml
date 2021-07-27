@@ -1,8 +1,8 @@
 # site settings
 locale: 'en-US'
 
-title: 'The Defence Tribune'
-description: ''
+title: 'Defence Tribune'
+description: 'Defence Tribune'
 
 baseurl: ''
 url: 'https://defencetribune.com'

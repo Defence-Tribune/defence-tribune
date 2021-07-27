@@ -21,15 +21,17 @@ title: Defence Tribune
 
                 <ul class='FeedList'>
                     {% for post in site.posts limit:1 %}
-                        <li>
-                            <a href='{{ post.url }}' class='FeedCard'>
+                    <li>
+                        <a href='{{ post.url }}' class='FeedCard'>
+                            <div class='FeedCardContents'>
                                 <div class='FeedListTitle'> {{ post.title }} </div>
                                 <div class='FeedListExcerpt'> {{ post.excerpt | truncate: 480 }} </div>
                                 <div class='FeedListDate'> {{post.date | truncate: 10, ''}} <br></div>
                                 <div class='FeedReadMoreMessage'> <i> Read more... </i> </div>
-                            </a>
-                        </li>
-                    {% endfor %}
+                            </div>
+                        </a>
+                    </li>
+                {% endfor %}
                 </ul>    
                 
             </div>
@@ -51,7 +53,7 @@ title: Defence Tribune
             background-image: linear-gradient(-45deg, #168aad, #1e6091, #184e77);
             background-size: 400% 400%;
 
-            animation: gradient 10s ease infinite;
+            animation: gradient 15s ease infinite;
 
             /*overflow: hidden;*/
         }
@@ -105,6 +107,10 @@ title: Defence Tribune
 
             box-shadow: 0 0 4px 4px rgba(0,0,0,0.1);
             transition: all ease-out 200ms;
+        }
+
+        .FeedCardContents {
+            padding: 60px;
         }
 
         .FeedList li:hover {
@@ -180,6 +186,11 @@ title: Defence Tribune
                 box-shadow: 0 0 4px 4px rgba(0,0,0,0.1);
                 border-radius: 14px;
             }
+
+            .FeedCardContents {
+                padding: 24px;
+            }
+
 
             .Feed li a:hover {
                 color: white;

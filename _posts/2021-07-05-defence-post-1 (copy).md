@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-date:   "2021-07-05 12:01:37"
+date:   "2021-07-04 12:01:37"
 categories: defence politics historical
 ---
 
