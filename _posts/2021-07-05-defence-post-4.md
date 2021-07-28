@@ -3,7 +3,6 @@ layout: post
 title:  "4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
 date:   "2021-07-06 12:01:39"
 categories: defence politics historical
-home_page_headline: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Molestie nunc non blandit massa enim nec dui nunc. Eu sem integer vitae justo eget magna. Sit amet luctus venenatis lectus magna fringilla urna porttitor. Vitae auctor eu augue ut lectus. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Nunc faucibus a pellentesque sit amet. Tempus imperdiet nulla malesuada pellentesque elit eget gravida. Amet cursus sit amet dictum sit amet justo donec enim. Mi tempus imperdiet nulla malesuada pellentesque elit. Blandit aliquam etiam erat velit. In aliquam sem fringilla ut morbi tincidunt augue interdum. Sed risus ultricies tristique nulla. Viverra ipsum nunc aliquet bibendum enim. Vestibulum lectus mauris ultrices eros in cursus turpis. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Rhoncus est pellentesque elit ullamcorper dignissim cras. Sit amet cursus sit amet. Consectetur adipiscing elit pellentesque habitant.

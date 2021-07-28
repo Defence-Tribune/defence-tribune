@@ -204,9 +204,47 @@
                 text-align: center;
             }
 
+            .HomeFeedList {
+                display: flex;
+
+                flex-direction: column;
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                gap: 22px;
+            }
+
+            .HomeFeedCardContainer {
+                display: block;
+
+                background-color: rgba(32,32,32, 45%);
+
+                border-radius: 8px;
+
+                box-shadow: 0 0 4px 4px rgba(0,0,0,0.1);
+                transition: all ease-out 200ms;
+
+                width: auto;
+                
+                order: 2 !important;
+            }
+
             .HomeFeedCardContainer:hover {
                 box-shadow: 0 0 4px 4px rgba(0,0,0,0.1);
                 border-radius: 14px;
+            }
+
+            .HomeFeedCard {
+                cursor: default;
+            }
+
+            #Headline {
+                padding: 0;
+                width: auto;
+
+                margin-bottom: 0;
             }
 
             .HomeFeedCard:hover {
@@ -221,9 +259,17 @@
                 padding-bottom: 20px;
             }
 
+            #Headline .HomeFeedListTitle {
+                font-size: 16pt;
+            }
+
             .HomeFeedListExcerpt {
                 font-size: 10pt;
                 text-align: center;
+            }
+
+            #Headline .HomeFeedListExcerpt {
+                font-size: 10pt;
             }
 
             .HomeFeedListDate {
