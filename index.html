@@ -1,4 +1,5 @@
 ---
+title: Defence Tribune
 ---
 
 <!DOCTYPE html>
@@ -35,7 +36,7 @@
                                 <a href='{{ post.url }}' class='HomeFeedCard'>
                                     <div class='HomeFeedCardContents'>
                                         <div class='HomeFeedListTitle'> {{ post.title }} </div>
-                                        <div class='HomeFeedListExcerpt'> {{ post.excerpt | truncate: 480 }} </div>
+                                        <div class='HomeFeedListExcerpt'> {{ post.excerpt | truncate: 380 }} </div>
                                         <div class='HomeFeedListDate'> {{post.date | truncate: 10, ''}} <br></div>
                                         <div class='HomeFeedReadMoreMessage'> <i> Read more... </i> </div>
                                     </div>
@@ -61,8 +62,8 @@
         }
 
         body {
-            background-color: #324766;
-            background-image: linear-gradient(#324766 ,#1d3557, #324766);
+            background-color: #168aad;
+            background-image: linear-gradient(-25deg, #168aad, #1e6091, #184e77);
         }
 
         .HomeFeedContainer {
@@ -183,7 +184,7 @@
         }
 
 
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 1279px) {
             .HomeFeed {
                 padding: 8vh 0vw 4vh 0vw;  /* skip navbar */
                 margin: 0 4vw 0 4vw;
