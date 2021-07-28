@@ -1,7 +1,5 @@
 ---
-title: Defence Tribune
 ---
-
 
 <!DOCTYPE html>
 
@@ -13,26 +11,39 @@ title: Defence Tribune
     <body>
         {% include navbar.html %}
 
-        <div class='FeedContainer'>
+        <div class='HomeFeedContainer'>
 
-            <div class='Feed'>
+            <div class='HomeFeed'>
 
                 <h1> Defence Tribune </h1>
 
-                <ul class='FeedList'>
-                    {% for post in site.posts limit:1 %}
-                    <li>
-                        <a href='{{ post.url }}' class='FeedCard'>
-                            <div class='FeedCardContents'>
-                                <div class='FeedListTitle'> {{ post.title }} </div>
-                                <div class='FeedListExcerpt'> {{ post.excerpt | truncate: 480 }} </div>
-                                <div class='FeedListDate'> {{post.date | truncate: 10, ''}} <br></div>
-                                <div class='FeedReadMoreMessage'> <i> Read more... </i> </div>
+                <div class='HomeFeedList'>
+                    {% for post in site.posts limit:4 %}
+                        {% if post.home_page_headline %}
+                            <div class='HomeFeedCardContainer' id='Headline' style='order: 1 !important;'>
+                                <a href='{{ post.url }}' class='HomeFeedCard'>
+                                    <div class='HomeFeedCardContents'>
+                                        <div class='HomeFeedListTitle'> {{ post.title }} </div>
+                                        <div class='HomeFeedListExcerpt'> {{ post.excerpt | truncate: 480 }} </div>
+                                        <div class='HomeFeedListDate'> {{post.date | truncate: 10, ''}} <br></div>
+                                        <div class='HomeFeedReadMoreMessage'> <i> Read more... </i> </div>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                    </li>
-                {% endfor %}
-                </ul>    
+                            {% else %}
+                            <div class='HomeFeedCardContainer'>
+                                <a href='{{ post.url }}' class='HomeFeedCard'>
+                                    <div class='HomeFeedCardContents'>
+                                        <div class='HomeFeedListTitle'> {{ post.title }} </div>
+                                        <div class='HomeFeedListExcerpt'> {{ post.excerpt | truncate: 480 }} </div>
+                                        <div class='HomeFeedListDate'> {{post.date | truncate: 10, ''}} <br></div>
+                                        <div class='HomeFeedReadMoreMessage'> <i> Read more... </i> </div>
+                                    </div>
+                                </a>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
                 
             </div>
 
@@ -50,34 +61,16 @@ title: Defence Tribune
         }
 
         body {
-            background-image: linear-gradient(-45deg, #168aad, #1e6091, #184e77);
-            background-size: 400% 400%;
-
-            animation: gradient 15s ease infinite;
-
-            /*overflow: hidden;*/
+            background-color: #324766;
+            background-image: linear-gradient(#324766 ,#1d3557, #324766);
         }
 
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        .FeedContainer {
+        .HomeFeedContainer {
             min-height: calc(100vh - 48px);
             width: 100%;
         }
 
-        .Feed {
+        .HomeFeed {
             padding: 8vh 0 4vh 0;  /* skip navbar */
             margin: 0 16vw 0 16vw;
 
@@ -89,17 +82,15 @@ title: Defence Tribune
             word-wrap: normal;
         }
 
-        .Feed h1 {
+        .HomeFeed h1 {
             color: white;
             font-size: 38pt;
             text-align: center;
             padding-bottom: 32px;
         }
 
-        .FeedList li {
-            list-style-type: none;
-
-            margin-bottom: 22px;
+        .HomeFeedCardContainer {
+            display: block;
 
             background-color: rgba(32,32,32, 45%);
 
@@ -107,29 +98,51 @@ title: Defence Tribune
 
             box-shadow: 0 0 4px 4px rgba(0,0,0,0.1);
             transition: all ease-out 200ms;
+
+            width: 20vw;
+            
+            order: 2 !important;
         }
 
-        .FeedCardContents {
-            padding: 60px;
+        #Headline {
+            padding: 20px;
+            width: 68vw;
+
+            margin-bottom: 10px;
         }
 
-        .FeedList li:hover {
+        .HomeFeedCardContents {
+            padding: 16px;
+        }
+
+        .HomeFeedCardContainer:hover {
             background-color: rgba(32,32,32, 85%);
             box-shadow: 0 0 12px 12px rgba(0,0,0,0.2);
             border-radius: 16px;
         }
 
-        .FeedList li a {
+        .HomeFeedCard {
             color: white;
             text-decoration: none;
         }
 
-        .Feed li a:hover {
+        .HomeFeedCard:hover {
             color: #c1d3fe;
         }
 
-        .FeedListTitle {
-            font-size: 20pt;
+        .HomeFeedList {
+            display: flex;
+            flex-direction: row;
+
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            gap: 1vw;
+        }
+
+        .HomeFeedListTitle {
+            font-size: 14pt;
             text-align: center;
 
             word-wrap: normal;
@@ -137,15 +150,24 @@ title: Defence Tribune
             padding-bottom: 32px;
         }
 
-        .FeedListExcerpt {
+        #Headline .HomeFeedListTitle {
+            font-size: 22pt;
+        }
+
+        .HomeFeedListExcerpt {
             color: #b3b6b7;
-            font-size: 11pt;
+
+            font-size: 9pt;
             text-align: center;
 
             word-wrap: normal;
         }
 
-        .FeedListDate {
+        #Headline .HomeFeedListExcerpt {
+            font-size: 12pt;
+        }
+
+        .HomeFeedListDate {
             font-size: 9pt;
 
             text-align: right;
@@ -154,7 +176,7 @@ title: Defence Tribune
             margin-bottom: 8px;
         }
 
-        .FeedReadMoreMessage {
+        .HomeFeedReadMoreMessage {
             font-size: 9pt;
 
             text-align: right;
@@ -162,7 +184,7 @@ title: Defence Tribune
 
 
         @media screen and (max-width: 700px) {
-            .Feed {
+            .HomeFeed {
                 padding: 8vh 0vw 4vh 0vw;  /* skip navbar */
                 margin: 0 4vw 0 4vw;
 
@@ -174,7 +196,7 @@ title: Defence Tribune
                 word-wrap: normal;
             }
 
-            .Feed h1 {
+            .HomeFeed h1 {
                 margin-bottom: 22px;
 
                 color: white;
@@ -182,21 +204,16 @@ title: Defence Tribune
                 text-align: center;
             }
 
-            .FeedList li:hover {
+            .HomeFeedCardContainer:hover {
                 box-shadow: 0 0 4px 4px rgba(0,0,0,0.1);
                 border-radius: 14px;
             }
 
-            .FeedCardContents {
-                padding: 24px;
-            }
-
-
-            .Feed li a:hover {
+            .HomeFeedCard:hover {
                 color: white;
             }
 
-            .FeedListTitle {
+            .HomeFeedListTitle {
                 font-size: 16pt;
                 text-align: center;
 
@@ -204,12 +221,12 @@ title: Defence Tribune
                 padding-bottom: 20px;
             }
 
-            .FeedListExcerpt {
+            .HomeFeedListExcerpt {
                 font-size: 10pt;
                 text-align: center;
             }
 
-            .FeedListDate {
+            .HomeFeedListDate {
                 margin-top: 12px;
                 margin-bottom: 2px;
             }
