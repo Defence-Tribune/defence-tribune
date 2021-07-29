@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HOW TO DEAL WITH THE CHINESE BEHEMOTH"
-date:   "2021-07-29 12:10:00"
+date:   "2021-07-29 12:10:00 +0530"
 categories: defence politics
 home_page_headline: true
 #permalink:

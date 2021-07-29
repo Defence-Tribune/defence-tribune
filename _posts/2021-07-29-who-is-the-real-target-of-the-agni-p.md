@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "WHO IS THE REAL TARGET OF THE AGNI-P"
-date:   "2021-07-29 12:00:00"
+date:   "2021-07-29 12:00:00 +0530"
 categories: defence
 ---
 
