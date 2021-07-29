@@ -14,30 +14,59 @@ title: About Us - Defence Tribune
             padding: 0;
         }
 
+        body {
+            background-color: #17202A;
+
+            background-image: url('{{ site.asset }}/sad_winnie.jpg');
+            background-size: auto 80vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            image-rendering: optimizeSpeed;
+        }
+
         .AboutUsContainer {
             min-height: calc(100vh - 48px);
             width: 100%;
 
-            background-color: #171717;
-            color: wheat;
-        }
-
-        body {
-            background-color: #171717;
+            background-color: rgba(23, 32, 42, 70%);
         }
 
         .AboutUs {
             padding: 12vh 0 4vh 0;  /* skip navbar */
             margin: 0 16vw 0 16vw;
 
-            background-color: #171717;
-
-            color: #e6e6e6;
+            color: white;
             font-size: 16pt;
             line-height: 1.5;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             text-align: left;
             word-wrap: normal;
+        }
+
+        img {
+            display: block;
+
+            margin: 20px auto 20px auto;
+
+            max-width: 21vw;
+        }
+
+        @media screen and (max-width: 700px) {
+            body {
+                background-image: unset;
+                background-size: unset;
+                background-position: unset;
+                background-repeat: unset;
+                image-rendering: unset;
+            }
+
+            img {
+                display: block;
+
+                margin: 20px auto 20px auto;
+
+                max-width: 256px
+            }
         }
     </style>
 
@@ -50,8 +79,10 @@ title: About Us - Defence Tribune
 
             <div class='AboutUs'>
 
-                TODO
-                
+                Our website is mandated with Defence news all over the world thereof including defence policy. It deals with Inter-Services Organizations,
+                Defence Accounts Department, Nuclear Task Forces, News from the FATF, defence policies from countries deemed hostile and also the various Institutes for Defence Studies and Analysis. 
+                We post the latest news on the activities of the international community and the happening stuff all around the world.
+
             </div>
 
         </div>
