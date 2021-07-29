@@ -6,6 +6,12 @@ title: Defence Tribune
 
 <html lang='en'>
 
+    <script>
+        window.addEventListener('load', function () {
+            document.getElementsByTagName("html")[0].style.visibility = "visible";
+        });
+    </script>
+
     {% include head.html %}
 
 
@@ -60,6 +66,8 @@ title: Defence Tribune
             margin:  0;
             padding: 0;
         }
+
+        html { visibility:hidden; }
 
         body {
             background-color: #168aad;
