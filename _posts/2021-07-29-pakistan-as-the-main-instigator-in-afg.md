@@ -2,7 +2,7 @@
 layout: post
 title:  "PAKISTAN AS THE MAIN INSTIGATOR OF TERRORISM IN AFGHANISTAN"
 date:   "2021-07-29 23:20:00 +0530"
-categories: history
+categories: historical
 home_page_headline: true
 ---
 
