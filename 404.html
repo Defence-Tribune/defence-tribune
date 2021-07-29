@@ -9,9 +9,28 @@ permalink: /404.html
 
     <head>
         <meta charset='UTF-8' />
-        <meta name='viewport' content="width=device-width, initial-scale=1.0" />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+        <meta name='description' content='404 - Page Not Found.'>
+        
+        <link rel='canonical' href='{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}'>
+        <link rel='alternate' type='application/rss+xml' title='404: Page Not Found - The Defence Tribune' href='{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}'>
+        <link rel='icon' sizes='32x32' href='/favicon.ico?v=1' type='image/x-icon'>
+    
+        <!-- https://developers.google.com/speed/libraries/#jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    
         <title>404: Page Not Found - The Defence Tribune</title>
     </head>
+
+
+    <script>
+        $(window).on('load', function() {
+            $("body").css('visibility', 'visible');
+            $("body").fadeIn(350);
+        });
+    </script>
 
 
     <style>
@@ -20,10 +39,10 @@ permalink: /404.html
             padding: 0;
         }
 
-        html { visibility:hidden; }
-
         body {
-            background-image: linear-gradient(#324766 ,#1d3557, #324766);
+            visibility: hidden;
+            display: none;
+            background-color: #324766;
         }
 
         .Container404 {
@@ -45,12 +64,6 @@ permalink: /404.html
 
 
     <body>
-
-        <script>
-            window.addEventListener('load', function () {
-                document.getElementsByTagName("html")[0].style.visibility = "visible";
-            });
-        </script>
 
     {% include navbar.html %}
 

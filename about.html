@@ -5,14 +5,16 @@ title: About Us - Defence Tribune
 <!DOCTYPE html>
 
 <html lang='en'>
-    
+
+    {% include head.html %}
+
     <script>
-        window.addEventListener('load', function () {
-            document.getElementsByTagName("html")[0].style.visibility = "visible";
+        $(window).on('load', function() {
+            $("body").css('visibility', 'visible');
+            $("body").fadeIn(350);
         });
     </script>
 
-    {% include head.html %}
 
     <style>
         * {
@@ -20,9 +22,10 @@ title: About Us - Defence Tribune
             padding: 0;
         }
 
-        html { visibility:hidden; }
-
         body {
+            visibility: hidden;
+            display: none;
+            
             background-color: #17202A;
 
             background-image: url('{{ site.asset }}/sad_winnie.jpg');

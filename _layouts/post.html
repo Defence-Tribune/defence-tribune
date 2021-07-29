@@ -2,40 +2,14 @@
 
 <html lang='en'>
 
-    <script>
-        window.addEventListener('load', function () {
-            document.getElementsByTagName("html")[0].style.visibility = "visible";
-        });
-    </script>
-
     {% include head.html %}
 
-
-    <body>
-
-
-        {% include navbar.html %}
-
-
-        <div class='PostContainer'>
-
-            <div class='Post'>
-
-                <div id='Date'>Date Posted: {{page.date | truncate: 10, ''}}</div>
-
-                <h1> {{page.title}} </h1>
-
-                {{content}}
-
-            </div>
-
-        </div>
-
-
-        {% include footer.html %}
-
-
-    </body>
+    <script>
+        $(window).on('load', function() {
+            $("body").css('visibility', 'visible');
+            $("body").fadeIn(350);
+        });
+    </script>
 
 
     <style>
@@ -44,9 +18,9 @@
             padding: 0;
         }
 
-        html { visibility:hidden; }
-
         body {
+            visibility: hidden;
+            display: none;
             background-color: #17202A;
         }
 
@@ -219,5 +193,32 @@
             }
         }
     </style>
+    
+
+    <body>
+
+
+        {% include navbar.html %}
+
+
+        <div class='PostContainer'>
+
+            <div class='Post'>
+
+                <div id='Date'>Date Posted: {{page.date | truncate: 10, ''}}</div>
+
+                <h1> {{page.title}} </h1>
+
+                {{content}}
+
+            </div>
+
+        </div>
+
+
+        {% include footer.html %}
+
+
+    </body>
 
 </html>

@@ -2,31 +2,14 @@
 
 <html lang='en'>
 
-    <script>
-        window.addEventListener('load', function () {
-            document.getElementsByTagName("html")[0].style.visibility = "visible";
-        });
-    </script>
-
     {% include head.html %}
 
-
-    <body>
-        {% include navbar.html %}
-
-        <div class='FeedContainer'>
-
-            <div class='Feed'>
-
-                {{content}}
-                
-            </div>
-
-        </div>
-
-        {% include footer.html %}
-
-    </body>
+    <script>
+        $(window).on('load', function() {
+            $("body").css('visibility', 'visible');
+            $("body").fadeIn(350);
+        });
+    </script>
     
 
     <style>
@@ -35,9 +18,9 @@
             padding: 0;
         }
 
-        html { visibility:hidden; }
-
         body {
+            visibility: hidden;
+            display: none;
             background-color: #324766;
             background-image: linear-gradient(#324766 ,#1d3557, #324766);
         }
@@ -180,5 +163,23 @@
             }
         }
     </style>
+    
+
+    <body>
+        {% include navbar.html %}
+
+        <div class='FeedContainer'>
+
+            <div class='Feed'>
+
+                {{content}}
+                
+            </div>
+
+        </div>
+
+        {% include footer.html %}
+
+    </body>
 
 </html>
