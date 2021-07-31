@@ -2,7 +2,7 @@
 locale: 'en-US'
 
 title: 'Defence Tribune'
-description: 'Defence Tribune'
+description: 'Defence Tribune: A Geopolitical fact sheet.'
 
 baseurl: ''
 url: 'https://defencetribune.com'
@@ -10,10 +10,11 @@ url: 'https://defencetribune.com'
 # asset dir
 asset: '/assets'
 
-# build config
+# plugins
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
 
 
 exclude:
