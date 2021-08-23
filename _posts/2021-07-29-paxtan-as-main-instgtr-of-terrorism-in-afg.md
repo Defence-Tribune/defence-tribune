@@ -3,7 +3,6 @@ layout: post
 title:  "PAKISTAN AS THE MAIN INSTIGATOR OF TERRORISM IN AFGHANISTAN"
 date:   "2021-07-29 23:20:00 +0530"
 categories: historical
-home_page_headline: true
 ---
 
 Pakistan. It's the elephant in the room when it comes to Afghanistan. First, let's deal with Pakistan's geostrategic position. This is important – it helps explain a lot of behaviour. Pakistan got a raw deal out of partition. Four provinces in North western India and one in the East which was to last only 25 years. One of which (North West Frontier) are basically minimally governed Pashtun tribal lands. And there were/are governed under an arcane set of laws – The Frontier Crimes Regulations. And their border with Afghanistan – the Durand line – drawn in 1893 by the Brits deliberately splits the Pashtun down the middle.
