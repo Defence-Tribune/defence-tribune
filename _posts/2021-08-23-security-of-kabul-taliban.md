@@ -37,9 +37,18 @@ Once released from Guantanamo he was then held in Afghan gov detention. He was o
 
 The one thing that annoys me most is giving the Talibs social media space. Former US President Donald Trump and Indian IT Minister were suspended on the American micro blogging platform Twitter but more than 25 accounts with direct affiliation to the Taliban with almost 200 Thousand followers operate with impunity. Their main intention was to live like their prophet did 1500 years ago. I do think the closest thing to Internet back then were horses. *Look out for more deviations from the ... muh prophet desert man*
 
-![Khalil Haqqani in a meeting with fellow jihadi Gulbudin Hekmatyar with a gun in between his legs](gullu.jpg)
+<br>
 
-[The Taliban say their deputy leader, Mullah Abdul Ghani Baradar, has arrived in Kabul and is in talks to form a new government.](https://twitter.com/bbcpashto/status/1428826798310187009)
+Khalil Haqqani in a meeting with fellow jihadi Gulbudin Hekmatyar with a gun in between his legs:
+![Khalil Haqqani in a meeting with fellow jihadi Gulbudin Hekmatyar with a gun in between his legs]({{ site.asset }}/gullu.jpeg)
+
+<br>
+The Taliban say their deputy leader, Mullah Abdul Ghani Baradar, has arrived in Kabul and is in talks to form a new government.
+
+<div class='Twitter'>
+<blockquote class="twitter-tweet"><p lang="ps" dir="rtl">طالبان وايي د دوى مرستيال مشر ملا عبدالغني برادر کابل ته تللی او د نوي حکومت په جوړېدو په خبرو بوخت دى. له کابله د طالبانو يو چارواکی احمد الله وثيق له بي بي سي سره غږېدلی. <a href="https://t.co/nCwOZYNy2Y">pic.twitter.com/nCwOZYNy2Y</a></p>&mdash; BBC Pashto (@bbcpashto) <a href="https://twitter.com/bbcpashto/status/1428826798310187009?ref_src=twsrc%5Etfw">August 20, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<br>
 
 Looking at the situation right now, I cannot say the Taliban is at power. Or rather, they have not reached there as of yet.
 
@@ -65,7 +74,7 @@ Who are the main stakeholders in the Talibani regime right now ?
   - Rumored to be Afghanistan's president post Ghani on August 17, 2021.
 - Hamid Karzai- Former president of Afghanistan a former leader of the Northern Alliance which fought against taliban.
   - As of now, at Kabul held by Taliban (Haqqani faction)
-  - His movements have been restricted as of now till total transfer of power to Taliban has been completed
+  - His movements have been restricted as of now till total transfer of power to Taliban has been completed.
   - [Posted a video on the net requesting people to stay calm](https://www.youtube.com/watch?v=BGBCWMzfUfU)
 
 - Abdullah Abdullah - Chairman of the High Council for National Reconciliation since 2010
